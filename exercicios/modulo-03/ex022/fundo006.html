@@ -3,15 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Config Fundo/ Fundo fixo da tela</title>
 
     <style>
         body{
+           /* 
             height: 100vh;
             background-color: black;
             background-image: url("imagens/wallpaper002.jpg");
             background-position: center center;
-            background-repeat: repeat-y;  /* no-repeat*/
+            background-repeat:no-repeat ;
+            background-size: cover;
+            background-attachment: fixed;
+            
+                shorthand - background
+                    color > image > position > repeat > [size ("nao funciona, só ignora")] > attachment 
+            */
+            
+            background: black url(imagens/wallpaper002.jpg) center center no-repeat fixed;
             background-size: cover;
         }
       
@@ -19,7 +28,7 @@
             border-radius: 10px;
             border: 1px solid darkblue;
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
         }
