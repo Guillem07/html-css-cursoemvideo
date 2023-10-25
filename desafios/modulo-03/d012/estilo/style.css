@@ -6,9 +6,26 @@
     margin: 0px;
 }
 
+
+ /* font-family: 'Sriracha', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+/* font-family: 'Passion One', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', sans-serif;
+    --fonte3: 'Sriracha', cursive;
+}   
+
+
 html, body{
     min-height: 100vh; /* colocando tamanho mínimo da (view port) minha pagina */
     background-color: darkgray;
+    font-family: var(--fonte1);
+    font-size: 1em;
 }
 
 
@@ -20,10 +37,15 @@ header{
 }
 
 header > h1{
+    font-family: var(--fonte2);
+
     padding-top: 50px;
     /* text-transform: uppercase; colocar todas as letras em maiúsculas */
 
     font-variant: small-caps; /* colocar todas as letras em maiúsculas MAS deixas as primeira letra maiores*/
+
+    font-size: 10vw;
+   
 }
 
 header > p{
@@ -40,12 +62,13 @@ header a:hover, footer a:hover{
     text-decoration: underline;
 }
 
-section{
-    
-    
-    padding: 10vh 0px;
+section{ 
+    padding: 10vh;
+    padding: 10vh;
     padding-left: 30px;
     line-height: 2em;
+    font-family: var(--fonte3);
+    font-size: 3.5vw;
 }
 
 section.normal{
@@ -59,7 +82,8 @@ section.imagem{
 }
 
 section.imagem > p{
-    width: 400px;
+    display: inline-block;
+    padding: 10px;
     background-color: rgba(0,0,0,0.253);
 }
 
