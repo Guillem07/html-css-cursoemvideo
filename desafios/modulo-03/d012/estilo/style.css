@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+*{ 
+    /* que estou tirando todos os 'espaços' que vieram embutidos nas tags,etc.. */
+    padding: 0px;
+    margin: 0px;
+}
+
+html, body{
+    min-height: 100vh; /* colocando tamanho mínimo da (view port) minha pagina */
+    background-color: darkgray;
+}
+
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+    
+}
+
+header > h1{
+    padding-top: 50px;
+    /* text-transform: uppercase; colocar todas as letras em maiúsculas */
+
+    font-variant: small-caps; /* colocar todas as letras em maiúsculas MAS deixas as primeira letra maiores*/
+}
+
+header > p{
+    padding-bottom: 50px;
+}
+
+header a, footer a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover{ 
+    text-decoration: underline;
+}
+
+section{
+    
+    
+    padding: 10vh 0px;
+    padding-left: 30px;
+    line-height: 2em;
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.imagem{
+    background-color: rgb(51,51,51);
+    color:white;
+}
+
+section.imagem > p{
+    width: 400px;
+    background-color: rgba(0,0,0,0.253);
+}
+
+
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
