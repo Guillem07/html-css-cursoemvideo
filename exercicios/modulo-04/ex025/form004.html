@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <style>
+        body
+        {
+            background-color: rgb(44, 38, 54);
+            font:normal 1em  Arial ;
+            color: white;
+        }
+        
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    
+    <form action="cadastro.phpp" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Dados pesoais</legend>
+            <p>
+                <label for="inome">Nome</label>
+                <input type="text" name="nome" id="inome"
+                autocomplete="name" minlength="5" maxlength="20" required>
+            </p>
+            <p>
+                <label for="iemail">Email:</label>
+                <input type="text" name="email" id="iemail" autocomplete="email " required>
+            </p>
+            <p>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="^\d(\d{2}\)\d{4,5}-\d{4,5}$" placeholder="(xx)xxxx-xxxxx" required>
+            </p>
+        </fieldset>
+        
+        <!-- Estudar mais sobre RegEx 
+
+        pattern="^\d(\d{2}\)\d{4,5}-\d{4,9}$"
+            -->
+
+        <p>
+            <input type="submit" value="Enviar" >
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+</body>
+</html>
