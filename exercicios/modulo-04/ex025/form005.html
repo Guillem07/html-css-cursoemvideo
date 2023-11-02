@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+         body
+        {
+            background-color: rgb(44, 38, 54);
+            font:normal 1em  Arial ;
+            color: white;
+        }
+    
+    </style>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form >
+
+        <fieldset>
+            <legend>Sexo</legend>
+
+            <input type="radio" name="sex" id="isxmas">
+            <label for="ismax">Masculino</label><br>
+
+            <input type="radio" name="sex" id="isxfem" checked>
+            <label for="isxfem">Feminino</label>
+            
+        </fieldset>
+
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            
+            <input type="checkbox" name="esbas" id="iesbas" value="M" checked>
+            <label for="iesbas">Basque</label><br>
+            
+            <input type="checkbox" name="esfut" id="iesfut" value="F">
+            <label for="iesfut">Futebol</label><br>
+
+            <input type="checkbox" name="esnat" id="iesnat">
+            <label for="iesnat">Natação</label><br>
+
+            <input type="checkbox" name="esten" id="iesten">
+            <label for="iesten">Tênis</label>
+
+        </fieldset>
+
+
+        <p> 
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
