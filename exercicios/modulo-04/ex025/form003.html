@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=[]], initial-scale=1.0">
+    <style>
+        body
+        {
+            background-color: rgb(44, 38, 54);
+            font:normal 1em  Arial ;
+            color: white;
+        }
+        
+    </style>
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Teste de formulário</h1>
+    <form au action="cadastro" method="get"
+    autocomplete="on">
+        <p>
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome"
+            maxlength="30"
+            autocomplete="name"
+            placeholder="Nome completo"
+            required>  
+        </p>
+
+        <p>
+            <label for="imedia">Média</label>
+            <input type="number" name="media" id="imedia" 
+            min="0" max="10" placeholder=" 0 a 10"
+            step="0.1 "
+            required>
+            
+        </p>
+
+        <p>
+            <label for="imes">Período Letivo</label>
+            <input type="month" id="imes" name="mes"
+            value="2022-07">
+        </p>
+
+        <p>
+            <label for="idia">Dia da prova</label>
+            <input type="date" id="idia" name="dia"
+            value="2020-07-14">
+        </p>
+
+        <p>
+            <label for="ihora">Horário da prova</label>
+            <input type="time" name="hora" id="ihora"
+            value="">
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
