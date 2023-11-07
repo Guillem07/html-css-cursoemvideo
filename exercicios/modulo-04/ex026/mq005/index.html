@@ -8,10 +8,13 @@
     <!-- Css De ICON do google -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@400" rel="stylesheet" />
 
+    <!-- Mobile First -->
     <link rel="stylesheet" href="estilos/style.css">
+
+    <link rel="stylesheet" href="estilos/mida-query.css">
     
 </head>
-<body>
+<body  onresize="mudouTamanho()">
     <header>
         <H1>Meu site</H1>
         <span onclick="clickMenu()" id="burguer" class="material-symbols-outlined">menu</span>
@@ -27,7 +30,7 @@
         </menu>
     </header>
     <main>
-        <article>
+        <article>                                   
             <h2>Testando Mídia Query</h2>
             <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus atque, ducimus accusantium nulla dolorum maiores fuga, ullam tempora a, odit omnis voluptas vitae quibusdam? Minima tenetur ut magnam nostrum provident. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus omnis id fugit voluptate totam. Dicta illo, iste sed sapiente consectetur libero ad voluptatum mollitia, accusamus ex porro tempora, cum incidunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam officia illo facilis explicabo quia et rem. Impedit similique repellat consectetur, voluptatum inventore voluptate alias, corrupti quas quae ipsa a reiciendis?
@@ -44,6 +47,15 @@
     </main>
 
     <script>
+        function mudouTamanho(){
+            if (window.innerWidth >= 768){
+                itens.style.display = 'block';
+
+            }
+            else{
+                itens.style.display = 'none';
+            }
+        }
         function clickMenu(){
             if( itens.style.display == 'none' ){
             itens.style.display = 'block';
